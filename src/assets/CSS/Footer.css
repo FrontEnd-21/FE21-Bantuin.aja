@@ -1,0 +1,66 @@
+.Footer {
+    margin-top: 7rem;
+    border: 2px solid;
+    background-color: #003F7E;
+    padding: 30px 30px 10px 30px;
+   
+}
+
+.Wrap-Footer{
+    margin: 0 auto;
+    background-color: #003F7E;
+    display: flex;
+    width: 80%;  
+}
+
+.Footer-img {
+   max-width: 250px;
+   margin: 10px 20px;
+}
+
+.Footer-Address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+   
+}
+
+.Address-Title h3{
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: medium;
+    font-family: 'poppins', sans-serif;
+}
+
+.Address-Map .map{
+    color: white;
+    font-weight: 300;
+    line-height: 30px;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Sosial{
+    margin-top: 3rem;
+    
+}
+.Sosial ul {
+    display: flex;
+    display: flex;
+    align-items: center;   
+}
+.Sosial ul li {
+    justify-content: space-between;
+    font-size: 35px;
+    margin-left: 40px;
+    list-style: none;
+    color: white;
+} 
+
+.cp{
+    margin-top: 1.5rem;
+    text-align: center;
+    color : white;
+}
+

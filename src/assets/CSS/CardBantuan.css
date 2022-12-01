@@ -1,0 +1,116 @@
+.D-Bantuan {
+    background-color:#003F7E; 
+    color:#F8F8F8;
+    padding: 10px;
+}
+
+.Wrap-DBantuan{
+    margin: 20px 90px 30px 90px;
+}
+
+.DBantuan-Title{
+    margin-top: 40px;
+    font-size: 35px;
+}
+
+.DBantuan-Sub{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.DBantuan-Time{
+    margin-right: 60rem;
+    margin-top: 100px;
+    font-size: 16px;
+ 
+}
+
+.btn{
+    margin-top: 80px;
+    background-color: #f27c36;
+    width: 150px;
+    height: 3rem;
+}
+
+.btn:hover{
+    background-color: #f27c36;
+    transition: all 0.2s;
+    color: #003F7E;
+}
+
+.bimg{
+    position: absolute;
+    right: 130px;
+    top: 90px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.btxt {
+    position: absolute;
+    right: 180px;
+    bottom: 100px;
+    border-radius: 5px
+    
+}
+
+.bob{
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.Description{
+    padding: 10px;
+    margin: 70px 42rem 0 50px;
+    border-color: white;
+    line-height: 35px;
+}
+
+.Wrap-Des{
+    margin: 0px 10px;
+}
+
+.Des-Sub{
+    text-align: justify;
+}
+
+.Des-Title{
+    margin-bottom: 20px;
+}
+
+
+
+.body2{
+    margin-top: 30px;
+}
+
+.Stages{
+    max-width: 200px;
+    position: absolute;
+    right: 12rem;
+    top: 46rem;
+    border-color: white;
+    align-items: center;
+}
+
+.icons{
+    font-size: 70px;
+    color: #003F7E;
+    margin-left: 5px;
+  
+}
+
+.Itext{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.Line{
+    background: #F27C36;
+    width: 3px;
+    height: 60px;
+    margin-left: 2.4rem;
+}
+
+
+

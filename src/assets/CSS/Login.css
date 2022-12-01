@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.Login{
+    margin: 2rem 5rem;
+    /* padding: 2rem; */
+     display: flex;
+    flex-direction: row;
+    border-color: white;
+}
+
+.Img{
+    margin: 3rem 0;
+    width: 480px;
+}
+
+.i-back{
+    color: black;
+    text-decoration: none; 
+}
+
+.i-back:hover{
+   color: #f27c36;
+}
+
+.Login-Title{
+    margin-top: 2.5rem;
+    font-size: 22px;
+    font-family: 'poppins', sans-serif;
+}
+
+.Login-Subtitle{
+    margin: 1rem 0 2rem ;
+
+}
+
+.Login-btn {
+
+   border-radius: 20px;     
+    margin-left: 50px;
+    border-color: beige;
+    margin-bottom: 20px;
+}
+
+
+.Daftar{
+    display:flex;
+    gap: 15px;
+    color: gray;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    display:flex;
+
+}
+.sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sub button {
+    background-color: #f27c36;
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    width: 500px;
+    border-color: #f27c36;
+    font-weight: bold;
+}
+
+.sub button:hover {
+    background-color: #003F7E;
+    border-color: #003F7E;
+}
+
+/* Register  CSS */ 
+
+.Role{
+    display: flex;
+    gap: 50px;
+}
+
+

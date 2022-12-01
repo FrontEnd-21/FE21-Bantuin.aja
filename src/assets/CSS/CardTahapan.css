@@ -1,0 +1,43 @@
+.Tahapan-Card {
+  border-color: white;
+  margin-bottom: 10rem;
+}
+
+.Wrap-Body{
+  padding: 0 5rem;
+}
+
+.h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight:  bold;
+  margin-bottom: 5rem;
+  
+}
+
+.Wrap-Step{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 7.5rem;
+}
+
+.Wrap-Step .num {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.Wrap-Step .txt{
+  font-size: 20px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.span{
+    margin:10px 0 10px 0;
+    font-size: 50px;
+    color: #003F7E;
+    
+}

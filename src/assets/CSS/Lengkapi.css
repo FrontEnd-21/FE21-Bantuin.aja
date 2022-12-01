@@ -1,0 +1,38 @@
+.konten {
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.Black-Line {
+    width: 10px;
+}
+.LD-Wrap {
+    background-color: #F8F8F8 ;
+    margin-top: 10px;
+    border: none;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #003F7E;
+}
+.back p:hover{
+    transform: translateX(10px);
+    transition: 0.5s ease-in-out;
+    color: #f27c36;
+}
+.icon {
+    font-size: 30px;
+}
+.icon:hover{
+    transform : rotate(10deg);
+    color: #f27c36;
+    transition: 0.5s ease-in-out;
+}
+.back p {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}

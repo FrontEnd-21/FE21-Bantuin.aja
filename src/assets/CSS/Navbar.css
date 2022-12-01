@@ -1,0 +1,48 @@
+.Navbar {
+    background: #f8f8f8;
+    height: 90px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3);
+    opacity: 0.9;
+}
+
+
+.ms-auto{
+    font-size: 20px;
+    font-family : 'poppins', sans-serif;
+    font-weight:800;
+}
+
+.ms-auto > .active{
+    text-decoration: #003F7E;
+    text-decoration: underline 3px #f27c36;
+}
+
+.ms-auto > .nav-link:hover {
+    font-size: 19px;
+    transition: all 0.4s;
+    color: #003F7E;
+    text-decoration: underline 3px #f27c36;
+}
+
+.ms-auto .masuk {
+    background-color: #f27c36;
+    text-decoration: none;
+    color: #fff;
+    width: 6rem;
+    padding: 2px;
+    height: 5.5vh;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 9px;
+    
+}
+
+.ms-auto .masuk:hover{
+    background-color: #003F7E;
+    transition: 0.2s ;
+    color: #fff;
+    text-decoration: none;
+    
+}
+

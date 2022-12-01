@@ -1,0 +1,164 @@
+.Contact{ 
+  background-color: #003f7e;
+  width: 80%;
+
+  margin : 0 auto;  
+  border-radius: 10px ;
+  
+}
+
+.Contact::before{
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    #003F7E,
+    #003F7E,
+    rgba(0, 0, 0, 0.082)
+  );
+  position: absolute;
+ border-radius: 10px 0 0 10px;
+  height: 300px;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  left:0;
+  z-index: 1;
+}
+
+.bg-card2{
+  width: auto;
+  height: 300px;
+}
+
+
+.Wrap-Contact {
+  padding: 3rem 5rem 3rem;
+  z-index: 2;
+}
+
+.Contact-Title {
+  color: #fff
+}
+
+.C-btn {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.C-img {
+  position: absolute;
+  right: 1px;
+  width: 700px;
+  height: 300px;
+  background-color:white;
+  border: 1px solid #000000;
+  border-radius: 0 10px 10px 0 ;
+}
+
+.C-img img{
+  margin-left: 6rem;
+}
+
+.mitra .imgmitra {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 502px;
+  height: 243px;
+  right: 1px;
+  bottom: 1px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50px 10px 10px 50px;
+}
+
+.imgmitra img {
+  position: absolute;
+  width: 243.34px;
+  height: 200px;
+  left: 160px;
+  top: 90px;
+}
+.Contact{ 
+  background-color: #003f7e;
+  width: 80%;
+
+  margin : 0 auto;  
+  border-radius: 10px ;
+  
+}
+
+.Contact::before{
+  content: "";
+  background-image: linear-gradient(
+    to right,
+    #003F7E,
+    #003F7E,
+    rgba(0, 0, 0, 0.082)
+  );
+  position: absolute;
+ border-radius: 10px 0 0 10px;
+  height: 300px;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  left:0;
+  z-index: 1;
+}
+
+.bg-card2{
+  width: auto;
+  height: 300px;
+}
+
+
+.Wrap-Contact {
+  padding: 3rem 5rem 3rem;
+  z-index: 2;
+}
+
+.Contact-Title {
+  color: #fff
+}
+
+.C-btn {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.C-img {
+  position: absolute;
+  right: 1px;
+  width: 700px;
+  height: 300px;
+  background-color:white;
+  border: 1px solid #000000;
+  border-radius: 0 10px 10px 0 ;
+}
+
+.C-img img{
+  margin-left: 6rem;
+}
+
+.mitra .imgmitra {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 502px;
+  height: 243px;
+  right: 1px;
+  bottom: 1px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 50px 10px 10px 50px;
+}
+
+.imgmitra img {
+  position: absolute;
+  width: 243.34px;
+  height: 200px;
+  left: 160px;
+  top: 90px;
+}
