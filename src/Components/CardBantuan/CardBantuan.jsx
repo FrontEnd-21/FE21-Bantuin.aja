@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 // Image
 import bantuan from "../../assets/IMAGE/bantuan2.jpg";
@@ -20,7 +21,27 @@ import { MdOutlineTimelapse } from "react-icons/md";
 import { MdOutlineDocumentScanner } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const CardBantuan = () => {
+const CardBantuan = ({dt}) => {
+  console.log(dt);
+
+  const [data, setData] = useState({});
+
+  const getApi = () => {
+    axios
+      .get(`https://be-9.up.railway.app/bantuan/${dt}`)
+      .then((response) => {
+        
+        setData(response.data.data)
+      })
+      .catch((error) => console.log(`Error ${error}`));
+  };
+  useEffect(() => {
+    getApi();
+  }, [1]);
+
+  console.log(data);
+
+  
   return (
     <>
       <Card className='D-Bantuan'>
@@ -32,9 +53,9 @@ const CardBantuan = () => {
             </Breadcrumb.Item>
           </Breadcrumb>
           <Card.Title className='DBantuan-Title'>
-            Bantuan Pedidikan Jenjang S1
+            {data.nama_bantuan}
           </Card.Title>
-          <Card.Subtitle className='DBantuan-Sub'>Pendidikan</Card.Subtitle>
+          <Card.Subtitle className='DBantuan-Sub'>{data.nama_bantuan}</Card.Subtitle>
           <Card.Text className='DBantuan-Time'>
             <MdOutlineTimelapse />
             12 Desember 2022
@@ -43,7 +64,7 @@ const CardBantuan = () => {
             <Button className='btn'>Apply</Button>
           </Link>
 
-          <Card.Img variant='right' src={bantuan} className='bimg' />
+          <Card.Img variant='right' src={data.image_bantuan} className='bimg' />
           <Card.Text className='btxt'>
             Offered BY
             <Card.Img variant='right' src={NUS} className='bob' />
@@ -54,16 +75,10 @@ const CardBantuan = () => {
       <Card className='Description'>
         <Card.Body className='Wrap-Des'>
           <Card.Title className='Des-Title'>
-            <strong>Deskripsi Bantuan</strong>
+            <strong>{data.description}</strong>
           </Card.Title>
           <Card.Text className='Des-Sub'>
-            Bantuan pendidikan jenjang S1 Merupakan program bantuan yang
-            diadakan oleh NUS University adapun bantuan yang diberikan berupa :
-            <ul>
-              <li>SPP dan Uang Gedung Gratis Selama Perkuliahan</li>
-              <li>Bantuan Uang Saku Rp 4.000.000/Semester</li>
-              <li>Bantuan Dana Buku Sebesar Rp 500.000</li>
-            </ul>
+           {data.description}
           </Card.Text>
         </Card.Body>
 
@@ -116,3 +131,4 @@ const CardBantuan = () => {
 };
 
 export default CardBantuan;
+

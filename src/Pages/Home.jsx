@@ -8,8 +8,8 @@ import axios from "axios";
 import { useState } from "react";
 
 
-const Home = () => {
-
+const Home = ({val} ) => {
+ console.log(val);
   return (
     <>
     <p></p>

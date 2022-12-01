@@ -20,7 +20,8 @@ import axios from "axios";
 function Register() {
   const [username , setUsername] = useState()
   const [password, setPassword] = useState()
-  const [role, setRole] = useState()
+  const [role, setRole] = useState();
+  const [status , setStatus] = useState();
 
   
   const handleUserName = (e) => {
@@ -37,7 +38,7 @@ function Register() {
     console.log(e.target.value);
     setRole(e.target.value);
   };
-  const handleSubmit = (e) => {
+  const handleSubm = (e) => {
     e.preventDefault();
     axios.post('https://be-9.up.railway.app/auth/register', {
       username : username, 
@@ -46,12 +47,17 @@ function Register() {
 
     })
     .then(response => {
-      console.log(response.data);
-      
+      console.log(response.data.status);
+      setStatus(response.data.status)
       
     }).catch(error => {
       console.log(error)
     })
+  }
+
+  if(status === 201){
+    setStatus(true)
+    alert('berhasil')
   }
 
   return (
@@ -72,7 +78,7 @@ function Register() {
             Daftar Akun terlebih dahulu agar bisa lanjut
           </Card.Subtitle>
 
-          <Form className='Form' onSubmit={handleSubmit}>
+          <Form className='Form' onSubmit={handleSubm}>
             <Form.Group className='mb-3' controlId='formBasicEmail'>
               <Form.Label>Username</Form.Label>
               <Form.Control type='text' placeholder='Masukan Nama Lengkap' onChange={handleUserName} />

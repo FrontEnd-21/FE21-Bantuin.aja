@@ -15,11 +15,14 @@ import { FaChevronLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Home from "./Home";
 import axios from "axios";
+import NavBar from "../Components/NavBar";
+import { click } from "@testing-library/user-event/dist/click";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
+  const [show, setShow] = useState(0)
 
   const handleUserName = (e) => {
     console.log(e.target.value);
@@ -33,6 +36,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    window.localStorage.setItem(show, 1)
+    
     axios
       .post("https://be-9.up.railway.app/auth/login", {
         username: email,
@@ -41,22 +46,29 @@ const Login = () => {
       .then((response) => {
         console.log(response.data.status);
         setSuccess(response.data.status);
+        
       })
       .catch((error) => {
         console.log(error);
       });
 
+
     if (success === 200) {
-      setSuccess(true);
-    }
+      setSuccess(true);   
+      
+    };
+    
+   
+    console.log(success);
   };
   return (
     <>
+    <NavBar val={show} />
       {success ? (
-        <section>
-          <h1>Berhasil Login</h1>
-          <Link to={"/"}>Home</Link>
-        </section>
+      <>
+          
+          <Home val={show}/>
+          </>
       ) : (
         <Card className='Login'>
           <Card.Body className='Wrap-Login'>
