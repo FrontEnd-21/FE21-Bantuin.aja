@@ -92,10 +92,10 @@ function Register() {
               <Form.Control type='Password' placeholder='Password' onChange={handlePassword} />
             </Form.Group>
             <Form.Group className='mb-3' controlId='formBasicPassword'>
-              <Form.Label>Role</Form.Label>
+              <Form.Label>password</Form.Label>
               <Form.Control
-                type='text'
-                placeholder='Role'
+                type='password'
+                placeholder='Password'
                 onChange={handleRole}
               />
             </Form.Group>

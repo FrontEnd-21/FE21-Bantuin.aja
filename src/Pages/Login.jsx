@@ -22,7 +22,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [success, setSuccess] = useState(false);
-  const [show, setShow] = useState(0)
+  const [show, setShow] = useState()
 
   const handleUserName = (e) => {
     console.log(e.target.value);
@@ -36,7 +36,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.localStorage.setItem(show, 1)
+    
     
     axios
       .post("https://be-9.up.railway.app/auth/login", {
@@ -51,23 +51,34 @@ const Login = () => {
       .catch((error) => {
         console.log(error);
       });
-
+      
 
     if (success === 200) {
       setSuccess(true);   
       
     };
-    
-   
     console.log(success);
   };
+
+    
+  
+  function saveClicked(){
+    localStorage.setItem('yes', false)
+  }
+
+  
   return (
     <>
     <NavBar val={show} />
       {success ? (
       <>
+        <div className="Succes">
+          <h1>Berhasil Login</h1>
+          <Link to={"/"} className="link" onClick={saveClicked}>
+            Home
+          </Link>
+        </div>
           
-          <Home val={show}/>
           </>
       ) : (
         <Card className='Login'>

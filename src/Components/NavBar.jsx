@@ -1,5 +1,5 @@
-import React, { useState }from "react";
-
+import React, { useEffect, useState }from "react";
+import { Link } from "react-router-dom";
 // Bootstrap
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -18,12 +18,20 @@ import { NavDropdown } from "react-bootstrap";
 // CSS
 import "../assets/CSS/Navbar.css";
 
-function NavBar( {val} ) {
-  const data = val
+function NavBar( ) {
+  const data = JSON.parse(localStorage.getItem('yes'));
+  console.log(data);
+
+
   const [show, setShow] = useState(true)
+  useEffect(() => {
+    if(data === false){
+      setShow(false)
+    }
+  }, [1]);
   
   
-  
+  console.log(show)
   return (
     <Navbar bg='light' expand='lg' sticky='top' className='Navbar'>
       <Container>
@@ -48,12 +56,10 @@ function NavBar( {val} ) {
               Register{" "}
             </Nav.Link>
             ) : (
-              <NavDropdown title="Pricing" id="nav-dropdown">
-                    <NavDropdown.Item eventKey="Basic Pricing">Basic</NavDropdown.Item>
-                    <NavDropdown.Item eventKey="Corporate Pricing">Corporates</NavDropdown.Item>
+              <NavDropdown title="Account" id="nav-dropdown">
+                    <NavDropdown.Item eventKey="Basic Pricing">Logout</NavDropdown.Item>
+                    <Link to={'/Profile'} id='link'>Profile</Link>
                     <NavDropdown.Divider />
-
-                    <NavDropdown.Item eventKey="Enterprise pricing">Enterprise</NavDropdown.Item>
                 </NavDropdown>
             )}
           </Nav>

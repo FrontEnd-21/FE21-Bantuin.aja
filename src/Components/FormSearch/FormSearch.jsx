@@ -35,7 +35,7 @@ const FormSearch = () => {
     setShow(true)
   }
   
-  useEffect(() => {
+  useEffect(() => { 
     getApi();
   }, [1])
   console.log(data.slice(0,3))
